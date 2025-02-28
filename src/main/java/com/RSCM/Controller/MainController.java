@@ -146,7 +146,7 @@ public class MainController {
 
 	// Index Page Content and Reference
 
-	@RequestMapping("/")
+	@GetMapping("/")
 	public String HomePage(HttpServletRequest httpServletRequest) {
 		returnIndexPageData(httpServletRequest);
 		returnUpdatedServicesData(httpServletRequest);
@@ -154,7 +154,7 @@ public class MainController {
 		return "index";
 	}
 
-	@RequestMapping("/index")
+	@GetMapping("/index")
 	public String IndexPage(HttpServletRequest httpServletRequest) {
 		returnIndexPageData(httpServletRequest);
 
