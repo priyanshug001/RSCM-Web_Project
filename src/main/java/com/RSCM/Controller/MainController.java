@@ -34,6 +34,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
+@RequestMapping("/")
 public class MainController {
 
 	// All Services Instances
