@@ -3,13 +3,13 @@ package com.RSCM.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.web.bind.annotation.RestController;
 
 import com.RSCM.models.AdminLoginModel;
 import com.RSCM.models.AdminRegistrationModel;
@@ -33,7 +33,7 @@ import com.RSCM.services.UpdatesServices;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
-@RestController
+@Controller
 public class MainController {
 
 	// All Services Instances
@@ -152,7 +152,7 @@ public class MainController {
 		returnIndexPageData(httpServletRequest);
 		returnUpdatedServicesData(httpServletRequest);
 		returnUpdatedAboutPageData(httpServletRequest);
-		return "index.jsp";
+		return "index";
 	}
 
 	@GetMapping("/index")
