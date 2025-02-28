@@ -152,7 +152,7 @@ public class MainController {
 		returnIndexPageData(httpServletRequest);
 		returnUpdatedServicesData(httpServletRequest);
 		returnUpdatedAboutPageData(httpServletRequest);
-		return "index";
+		return "index.jsp";
 	}
 
 	@GetMapping("/index")
