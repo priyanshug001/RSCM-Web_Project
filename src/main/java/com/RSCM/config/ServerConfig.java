@@ -1,5 +1,6 @@
 package com.RSCM.config;
 
+import java.io.File;
 import org.apache.catalina.Context;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
@@ -13,6 +14,7 @@ public class ServerConfig {
     public TomcatServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
         factory.addContextCustomizers((Context context) -> context.setAllowCasualMultipartParsing(true)); // File upload support
+        factory.setDocumentRoot(new File("src/main/webapp"));
         return factory;
     }
 
