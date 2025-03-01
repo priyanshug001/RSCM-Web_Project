@@ -22,7 +22,7 @@ public class ServerConfig {
     public WebServerFactoryCustomizer<TomcatServletWebServerFactory> customizer() {
         return factory -> {
             factory.setPort(8080); // Default 8080 hota hai, isko 8081 kar diya
-            factory.setContextPath("/index"); // Default `/` hota hai, isko `/myapp` kiya
+            factory.setContextPath(""); // Default `/` hota hai, isko `/myapp` kiya
         };
     }
 }
