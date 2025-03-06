@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<%@page import="com.RSCM.models.EditIndexPageContentModel"%>
 <html lang="en">
 <head>
 <!-- basic -->
